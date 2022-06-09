@@ -1,0 +1,16 @@
+<h1>Players Details</h1>
+<mat-spinner *ngIf="showSpinner" diameter="46"></mat-spinner>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Club</th>
+        <th>Position</th>
+    </tr>
+    <tr *ngFor="let p of player">
+        <td>{{p.fname}}</td>
+        <td>{{p.country}}</td>
+        <td>{{p.club}}</td>
+        <td>{{p.player_position}}</td>
+    </tr>
+</table>

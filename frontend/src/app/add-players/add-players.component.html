@@ -1,0 +1,40 @@
+
+<br><br>
+    <div class="container">
+        <form #player="ngForm" (ngSubmit)="onSubmit(player.value)"> 
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" name="fname" class="form-control" id="Name" ngModel>
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="club" class="form-control" id="country" ngModel>
+              </div>
+              <div class="mb-3">
+                <label for="Club" class="form-label">Club</label>
+                <input type="text" name="country" class="form-control" id="Club" ngModel>
+              </div>
+              <div class="mb-3">
+                <label for="Position" class="form-label">Position</label>
+                <input type="text" name="player_position" class="form-control" id="Position" ngModel>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+<!-- <table>
+  <thead>
+    <td>Name</td>
+    <td>Country</td>
+    <td>Club</td>
+    <td>Position</td>
+  </thead>
+  <tr *ngFor="let player of players">
+    <td>{{player.name}}</td>
+    <td>{{player.country}}</td>
+    <td>{{player.club}}</td>
+    <td>{{player.position}}</td>
+  </tr>
+</table>
+ -->
